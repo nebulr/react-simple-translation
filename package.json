@@ -4,7 +4,7 @@
   "author": "James A. Meyer",
   "license": "MIT",
   "description": "State Management that wraps around the React Component",
-  "main": "index.js",
+  "main": "./src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/nebulr/react-component-state.git"
