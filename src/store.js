@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /**
  * Store - manage the state across the application.
  */
@@ -16,16 +17,16 @@ class Store {
   }
 
   __propagate() {
-    for (let [id, component] of this.components.entries()) {
+    this.components.forEach((component) => {
       component.setState(this.__state);
-    }
+    });
   }
 
   set state(obj) {
     this.__state = obj;
     this.__propagate();
   }
-  
+
   get state() {
     return this.__state;
   }

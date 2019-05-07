@@ -1,7 +1,11 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable class-methods-use-this */
 import { Component } from 'react';
-import Store from './store';
-import _ from 'lodash';
+import merge from 'deepmerge';
 import uuidv1 from 'uuid/v1';
+
+import Store from './store';
 
 export default class StateComponent extends Component {
   constructor(props) {
@@ -11,12 +15,12 @@ export default class StateComponent extends Component {
     Store.set(this);
   }
 
-  updateState(obj) {
-    Store.state = _.merge({}, Store.state, obj);
-  }
-
   componentWillUnmount() {
     Store.remove(this.id);
+  }
+
+  updateState(obj) {
+    Store.state = merge(Store.state, obj);
   }
 
   render() {
