@@ -1,22 +1,21 @@
 {
-  "name": "react-component-state",
+  "name": "react-simple-translation",
   "version": "0.1.0",
   "author": "James A. Meyer",
   "license": "MIT",
-  "description": "State Management that wraps around the React Component",
+  "description": "Simple translation module",
   "main": "./src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nebulr/react-component-state.git"
+    "url": "https://github.com/nebulr/react-simple-translation.git"
   },
   "bugs": {
-    "url": "https://github.com/nebulr/react-component-state/issues"
+    "url": "https://github.com/nebulr/react-simple-translation/issues"
   },
-  "homepage": "https://github.com/nebulr/react-component-state#readme",
+  "homepage": "https://github.com/nebulr/react-simple-translation#readme",
   "dependencies": {
     "deepmerge": "3.2.0",
-    "react": "16.8.6",
-    "uuid": "3.3.2"
+    "react": "16.8.6"
   },
   "scripts": {
     "build": "WEBPACK_ENV=build webpack",
